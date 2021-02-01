@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="zxx">
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+</style>
 
 <head>
     <meta charset="UTF-8">
@@ -46,9 +51,10 @@
                         <nav class="header__nav__menu mobile-menu">
                             <ul>
                                 <li class="active"><a href="./index.html">Home</a></li>
-                                <li><a href="./about.html">About</a></li>
-                                <li><a href="./portfolio.html">Portfolio</a></li>
-                                <li><a href="./services.html">Services</a></li>
+                                <li><a href="#about-me">About</a></li>
+                                <li><a href="#skills-and-interests">skills</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <!--
                                 <li><a href="#">Pages</a>
                                     <ul class="dropdown">
                                         <li><a href="./about.html">About</a></li>
@@ -57,35 +63,39 @@
                                         <li><a href="./blog-details.html">Blog Details</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="./contact.html">Contact</a></li>
+                                -->
+                                <li><a href="#footer">Contact</a></li>
                             </ul>
                         </nav>
-                        <div class="header__nav__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                        </div>
-                    </div>
+
+                        <!--
+                <div class="header__nav__social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-youtube-play"></i></a>
                 </div>
+                                -->
             </div>
-            <div id="mobile-menu-wrap"></div>
         </div>
-    </header>
-    <!-- Header End -->
+    </div>
+    <div id="mobile-menu-wrap"></div>
+</div>
+</header>
+<!-- Header End -->
 
     <!-- Hero Section Begin -->
     <section class="hero">
         <div class="hero__slider owl-carousel">
-            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.png">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="hero__text">
                                 <span>Welcome to</span>
                                 <h2>Dhanish's Website</h2>
-                                <a href="#" class="primary-btn">Learn more about me</a>
+                                <a href="#about-me" class="primary-btn">Learn more about me</a>
                             </div>
                         </div>
                     </div>
@@ -98,7 +108,7 @@
                             <div class="hero__text">
                                 <span>Want to learn how to code? Check out</span>
                                 <h2>Dannycademy</h2>
-                                <a href="http://173.230.155.180/" target="_blank" class="primary-btn">Check out our website</a>
+                                <a href="https://www.dannycademy.org/" target="_blank" class="primary-btn">Check out our website</a>
                             </div>
                         </div>
                     </div>
@@ -108,18 +118,55 @@
     </section>
     <!-- Hero Section End -->
 
+
+    <!-- Blog Details Section Begin -->
+    <div class="blog-details spad" id="about-me">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+
+                    <div class="blog__hero__text">
+                        <h2>about me</h2>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="blog__details__content">
+                        <div class="blog__details__text">
+                            <div class="text-center">
+                                <img src="img/about/myPfp.png" alt="" style="width: 300px;">
+                                <br>
+                                <br>
+                                <br>
+                            <p>Hello! My name is Dhanish Natarajan. I am a sophomore at Lynbrook High School. I love
+                            combining my creativity and problem solving skills to develop programs that
+                            solve real world problems.  I work on numerous coding projects in my free time to expand my
+                                knowledge since there is an endless ocean of concepts, tools, APIs and libraries
+                            to learn about. Through my 5 years of programming experience, I have intuitively learnt the
+                            way to be an efficient software developer by being organized, following conventions,
+                            making my code more readable and much more. I have observed mistakes beginner programmers
+                            make and have corrected myself by learning not to repeat those mistakes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Services Section Begin -->
-    <section class="services spad">
+    <section class="services spad" id="skills-and-interests">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
                     <div class="services__title">
                         <div class="section-title">
                             <!-- <span>Our services</span> -->
-                            <h2>My Skills</h2>
+                            <h2>Skills and Interests</h2>
                         </div>
-                        <p>I learn new skills by working on computer science projects in diverse fields. This way, I can build upon my skills and experiences to create programs/applictions that solve real world problems</p>
-                        <a href="#" class="primary-btn">View projects</a>
+                        <p>I learn new skills by working on computer science projects in diverse fields. This way, I can build upon my knowledge to pursue my passion for developing programs/applications that solve real world problems</p>
+                        <a href="#projects" class="primary-btn">View projects</a>
                     </div>
                 </div>
                 <div class="col-lg-8">
@@ -130,8 +177,9 @@
                                     <img src="img/icons/si-1.png" alt="">
                                 </div>
                                 <h4>Machine Learning</h4>
-                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our
-                                    post production services can put the finishing touches.</p>
+                                <p>Machine learning never fails to fascinate me because of its potential to solve
+                                    numerous problems that cannot be solved through regular code. I have some experience
+                                    with ML related libraries such as tensorflow, pytorch, scikit learn and numpy</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
@@ -140,8 +188,9 @@
                                     <img src="img/icons/si-2.png" alt="">
                                 </div>
                                 <h4>Game Development</h4>
-                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our
-                                    post production services can put the finishing touches.</p>
+                                <p>Game development is where I can combine my programming skills and creativity to
+                                    enrich my learning through an enjoyable experience. I have developed games with
+                                    python's graphics library called pygame.</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
@@ -150,8 +199,8 @@
                                     <img src="img/icons/si-3.png" alt="">
                                 </div>
                                 <h4>Frontend</h4>
-                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our
-                                    post production services can put the finishing touches.</p>
+                                <p>I have experience with javascript, html, css, and bootstrap and have learnt
+                                what it takes to build a responsive and engaging website frontend for the user</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
@@ -160,8 +209,9 @@
                                     <img src="img/icons/si-4.png" alt="">
                                 </div>
                                 <h4>Backend</h4>
-                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our
-                                    post production services can put the finishing touches.</p>
+                                <p>I have a substantial amount of experience with python and some of its libraries
+                                    like flask and opencv. I have also used the mongodb and sqlite3 databases in
+                                    various projects.</p>
                             </div>
                         </div>
                     </div>
@@ -173,7 +223,7 @@
 
 
     <!-- Portfolio Section Begin -->
-    <section class="portfolio spad">
+    <section class="portfolio spad" id="projects">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -190,12 +240,14 @@
             <div class="row portfolio__gallery">
                 <div class="col-lg-4 col-md-6 col-sm-6 mix branding web hackathon">
                     <div class="portfolio__item">
+                        <a href="portfolio/spotlight.html" style="color: white">
                         <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/spotlight.jpg">
                             <!--
                             <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
                                     class="fa fa-play"></i></a>
                                     -->
                         </div>
+                        </a>
                         <div class="portfolio__item__text">
                             <h4><a href="portfolio/spotlight.html" style="color: white">Spotlight</a></h4>
                             <!-- <a href="" style="color: white; font-size: 30px">Spotlight</a> -->
@@ -209,8 +261,10 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 mix machineLearning hackathon">
                     <div class="portfolio__item">
+                        <a href="portfolio/the-three-blind-mice.html" style="color: white">
                         <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/threeBlindMice.jpg">
                         </div>
+                        </a>
                         <div class="portfolio__item__text">
                             <h4><a href="portfolio/the-three-blind-mice.html" style="color: white">The Three Blind Mice</a></h4>
                             <ul>
@@ -225,8 +279,10 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 mix web hackathon">
                     <div class="portfolio__item">
+                        <a href="portfolio/quarantimes.html" style="color: white">
                         <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/quarantimes.jpg">
                         </div>
+                        </a>
                         <div class="portfolio__item__text">
                             <h4><a href="portfolio/quarantimes.html" style="color: white">Quarantimes</a></h4>
                             <ul>
@@ -238,8 +294,10 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 mix machineLearning">
                     <div class="portfolio__item">
+                        <a href="portfolio/daisy-bot.html" style="color: white">
                         <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/daisyBot.jpg">
                         </div>
+                        </a>
                         <div class="portfolio__item__text">
                             <h4><a href="portfolio/daisy-bot.html" style="color: white">Daisy Bot</a></h4>
                             <ul>
@@ -248,10 +306,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 mix web volunteering">
+                <div class="col-lg-4 col-md-6 col-sm-6 mix web">
                     <div class="portfolio__item">
+                        <a href="portfolio/dannycademy.html" style="color: white">
                         <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/dannycademy.png">
                         </div>
+                        </a>
                         <div class="portfolio__item__text">
                             <h4><a href="portfolio/dannycademy.html" style="color: white">Dannycademy</a></h4>
                             <ul>
@@ -263,8 +323,10 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 mix web">
                     <div class="portfolio__item">
+                        <a href="portfolio/pallone-pack.html" style="color: white">
                         <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/pallonePack.png">
                         </div>
+                        </a>
                         <div class="portfolio__item__text">
                             <h4><a href="portfolio/pallone-pack.html" style="color: white">Pallone Pack</a></h4>
                             <ul>
@@ -275,8 +337,10 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 mix volunteering">
                     <div class="portfolio__item">
+                        <a href="portfolio/shout-for-help.html" style="color: white">
                         <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/shoutForHelp.jpg">
                         </div>
+                        </a>
                         <div class="portfolio__item__text">
                             <h4><a href="portfolio/shout-for-help.html" style="color: white">Shout for Help</a></h4>
                             <ul>
@@ -287,8 +351,10 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 mix volunteering web">
                     <div class="portfolio__item">
+                        <a href="portfolio/cambio-website.html" style="color: white">
                         <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/cambio.jpg">
                         </div>
+                        </a>
                         <div class="portfolio__item__text">
                             <h4><a href="portfolio/cambio-website.html" style="color: white">Cambio Website</a></h4>
                             <ul>
@@ -300,8 +366,10 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 mix volunteering web">
                     <div class="portfolio__item">
+                        <a href="portfolio/schoology-discussion-analytics.html" style="color: white">
                         <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/schoologyDiscussionAnalytics.jpg">
                         </div>
+                        </a>
                         <div class="portfolio__item__text">
                             <h4><a href="portfolio/schoology-discussion-analytics.html" style="color: white">Schoology Discussion Analytics</a></h4>
                             <ul>
@@ -313,8 +381,10 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 mix gameDesign">
                     <div class="portfolio__item">
+                        <a href="portfolio/pixel-shooter.html" style="color: white">
                         <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/pixelShooter.jpeg">
                         </div>
+                        </a>
                         <div class="portfolio__item__text">
                             <h4><a href="portfolio/pixel-shooter.html" style="color: white">Pixel Shooter</a></h4>
                             <ul>
@@ -325,8 +395,10 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 mix gameDesign">
                     <div class="portfolio__item">
+                        <a href="portfolio/maze-generators.html" style="color: white">
                         <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/mazeGenerator.jpg">
                         </div>
+                        </a>
                         <div class="portfolio__item__text">
                             <h4><a href="portfolio/maze-generators.html" style="color: white">Maze Generators</a></h4>
                             <ul>
@@ -337,8 +409,10 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 mix gameDesign">
                     <div class="portfolio__item">
+                        <a href="portfolio/sudoku-solver.html" style="color: white">
                         <div class="portfolio__item__video set-bg" data-setbg="img/portfolio/sudokuSolver.jpg">
                         </div>
+                        </a>
                         <div class="portfolio__item__text">
                             <h4><a href="portfolio/sudoku-solver.html" style="color: white">Sudoku Solver</a></h4>
                             <ul>
@@ -365,235 +439,8 @@
     </section>
     <!-- Portfolio Section End -->
 
-    <!-- Counter Section Begin -->
-    <section class="counter">
-        <div class="container">
-            <div class="counter__content">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-1.png" alt="">
-                                <h2 class="counter_num">95%</h2>
-                                <p>Python</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item second__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-2.png" alt="">
-                                <h2 class="counter_num">80%</h2>
-                                <p></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item third__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-3.png" alt="">
-                                <h2 class="counter_num">230</h2>
-                                <p>Perspective clients</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item four__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-4.png" alt="">
-                                <h2 class="counter_num">230</h2>
-                                <p>Compled Projects</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Counter Section End -->
-
-    <!-- Team Section Begin -->
-    <section class="team spad set-bg" data-setbg="img/team-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title team__title">
-                        <span>Nice to meet</span>
-                        <h2>OUR Team</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item set-bg" data-setbg="img/team/team-1.jpg">
-                        <div class="team__item__text">
-                            <h4>AMANDA STONE</h4>
-                            <p>Videographer</p>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--second set-bg" data-setbg="img/team/team-2.jpg">
-                        <div class="team__item__text">
-                            <h4>AMANDA STONE</h4>
-                            <p>Videographer</p>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--third set-bg" data-setbg="img/team/team-3.jpg">
-                        <div class="team__item__text">
-                            <h4>AMANDA STONE</h4>
-                            <p>Videographer</p>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--four set-bg" data-setbg="img/team/team-4.jpg">
-                        <div class="team__item__text">
-                            <h4>AMANDA STONE</h4>
-                            <p>Videographer</p>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 p-0">
-                    <div class="team__btn">
-                        <a href="#" class="primary-btn">Meet Our Team</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Team Section End -->
-
-    <!-- Latest Blog Section Begin -->
-    <section class="latest spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title center-title">
-                        <span>Our Blog</span>
-                        <h2>Blog Update</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="latest__slider owl-carousel">
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>Bumper Ads: How to Tell a Story in 6 Seconds</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>Bumper Ads: How to Tell a Story in 6 Seconds</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Latest Blog Section End -->
-
     <!-- Call To Action Section Begin -->
+    <!--
     <section class="callto spad set-bg" data-setbg="img/callto-bg.jpg">
         <div class="container">
             <div class="row">
@@ -607,18 +454,17 @@
             </div>
         </div>
     </section>
+    -->
     <!-- Call To Action Section End -->
 
     <!-- Footer Section Begin -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__top">
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__logo">
-                            <a href="#"><img src="img/logo.png" alt=""></a>
-                        </div>
                     </div>
+                    <!--
                     <div class="col-lg-6 col-md-6">
                         <div class="footer__top__social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -628,40 +474,54 @@
                             <a href="#"><i class="fa fa-youtube-play"></i></a>
                         </div>
                     </div>
+                    -->
                 </div>
             </div>
             <div class="footer__option">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="footer__option__item">
-                            <h5>About us</h5>
-                            <p>Formed in 2006 by Matt Hobbs and Cael Jones, Videoprah is an award-winning, full-service
-                                production company specializing.</p>
-                            <a href="#" class="read__more">Read more <span class="arrow_right"></span></a>
+                            <h5>About Me</h5>
+                            <p>Hello! My name is Dhanish Natarajan. I am a sophomore at Lynbrook High School. I love
+                                combining my creativity and problem solving skills to develop programs that
+                                solve real world problems.</p>
+                            <a href="#about-me" class="read__more">Read more <span class="arrow_right"></span></a>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-3">
                         <div class="footer__option__item">
-                            <h5>Who we are</h5>
+                            <h5>Projects</h5>
                             <ul>
-                                <li><a href="#">Team</a></li>
-                                <li><a href="#">Carrers</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Locations</a></li>
+                                <li><a href="portfolio/dannycademy.html">Dannycademy</a></li>
+                                <li><a href="portfolio/spotlight.html">Spotlight</a></li>
+                                <li><a href="portfolio/quarantimes.html">Quarantimes</a></li>
+                                <li>
+                                    <a href="#projects" class="read__more">More projects</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-3">
                         <div class="footer__option__item">
-                            <h5>Our work</h5>
+                            <h5>My Skills</h5>
                             <ul>
-                                <li><a href="#">Feature</a></li>
-                                <li><a href="#">Latest</a></li>
-                                <li><a href="#">Browse Archive</a></li>
-                                <li><a href="#">Video for web</a></li>
+                                <li><a href="#skills-and-interests">Frontend</a></li>
+                                <li><a href="#skills-and-interests">Backend</a></li>
+                                <li><a href="#skills-and-interests">Machine Learning</a></li>
+                                <li><a href="#skills-and-interests">Game Development</a></li>
                             </ul>
                         </div>
                     </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>Contact</h5>
+                            <ul>
+                                <li><a href="mailto:dhanishnatarajan@gmail.com">dhanishnatarajan@gmail.com</a></li>
+                                <li><a href="https://github.com/superstarcoder" target="_blank">github.com/superstarcoder</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--
                     <div class="col-lg-4 col-md-12">
                         <div class="footer__option__item">
                             <h5>Newsletter</h5>
@@ -672,8 +532,10 @@
                             </form>
                         </div>
                     </div>
+                    -->
                 </div>
             </div>
+
             <div class="footer__copyright">
                 <div class="row">
                     <div class="col-lg-12 text-center">
