@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="https://unpkg.com/acorn"></script>
+		<script type="text/javascript" src="js/paper.js"></script>
+		<script type="text/paperscript" src="js/myScript.js" canvas="myCanvas"></script>
+		<audio controls autoplay>
+			<source src="music/natu_bday_song.mp3" type="audio/mpeg">
+		</audio>
+	</head>
+	<body>
+		<canvas id="myCanvas" resize></canvas>
+	</body>
+</html>
+
+<style>
+	canvas[resize] {
+    width: 100vw;
+    height: 100vh;
+}
+	body {
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+</style> 
