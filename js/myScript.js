@@ -1,11 +1,11 @@
 
 // black background
-var bg = new Path.Rectangle({
-    point: [0, 0],
-    size: [view.size.width, view.size.height],
-});
-bg.fillColor = '#000000';
-bg.sendToBack();
+// var bg = new Path.Rectangle({
+//     point: [0, 0],
+//     size: [view.size.width, view.size.height],
+// });
+// bg.fillColor = '#000000';
+// bg.sendToBack();
 
 // helper functions
 function randnum(min, max) {
@@ -230,9 +230,11 @@ var i
 var shouldDelete
 
 var correctedText = new PointText({
-    position: view.center + [0,5],
+    // position: view.center + [0,5],
+	// point: [view.width/2, view.height/2],
+	point: [view.size.width/2, view.size.height*0.9] ,
     justification: 'center',
-    content: 'Happy birthday Natu boy!!',
+    content: 'Happy Birthday Natu Boy! 😀',
     fillColor: 'white',
     fontFamily: 'Courier New',
     fontWeight: 'bold',

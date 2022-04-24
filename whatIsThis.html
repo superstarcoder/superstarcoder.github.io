@@ -9,6 +9,7 @@
 		</audio>
 	</head>
 	<body>
+		<img src="/img/natu.jpeg" class="myImg">
 		<canvas id="myCanvas" resize></canvas>
 	</body>
 </html>
@@ -17,10 +18,31 @@
 	canvas[resize] {
     width: 100vw;
     height: 100vh;
+	z-index: 2	;
 }
 	body {
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		background-color: black;
 	}
+
+	.myImg {
+		position: fixed;
+		width: 50vh;
+		aspect-ratio: 768/1024;
+		z-index: 1;
+	}
+
+	audio {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 3;
+	}
+
 </style> 
